@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="1" time="0.36" errors="0" skipped="0" tests="1" name="TestSuite">
+<testsuite failures="0" time="0.335" errors="0" skipped="0" tests="1" name="TestSuite">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/1.6.0_29-b11-402.jdk/Contents/Libraries"/>
@@ -22,7 +22,7 @@
     <property name="basedir" value="/Users/unreal/Workspace/challenge"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/1.6.0_29-b11-402.jdk/Contents/Home/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="surefire.real.class.path" value="/Users/unreal/Workspace/challenge/target/surefire/surefirebooter7744097734589071389.jar"/>
+    <property name="surefire.real.class.path" value="/Users/unreal/Workspace/challenge/target/surefire/surefirebooter3696661506216801519.jar"/>
     <property name="java.io.tmpdir" value="/var/folders/gw/x_194lbs6f36jcqxr7b79jlr0000gn/T/"/>
     <property name="line.separator" value="
 "/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.0"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/1.6.0_29-b11-402.jdk/Contents/Home"/>
-    <property name="sun.java.command" value="/Users/unreal/Workspace/challenge/target/surefire/surefirebooter7744097734589071389.jar /Users/unreal/Workspace/challenge/target/surefire/surefire6637661271313568874tmp /Users/unreal/Workspace/challenge/target/surefire/surefire744453107728728573tmp"/>
+    <property name="sun.java.command" value="/Users/unreal/Workspace/challenge/target/surefire/surefirebooter3696661506216801519.jar /Users/unreal/Workspace/challenge/target/surefire/surefire679205145517246821tmp /Users/unreal/Workspace/challenge/target/surefire/surefire2147017882196515407tmp"/>
     <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="apple.awt.CToolkit"/>
@@ -65,19 +65,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.019" classname="com.xcellent.challenge.CIDIRTest" name="testCidr">
-    <failure message="expected:&lt;127.0.0.1&gt; but was:&lt;127.0.0.1/8&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;127.0.0.1&gt; but was:&lt;127.0.0.1/8&gt;
-	at org.testng.Assert.fail(Assert.java:89)
-	at org.testng.Assert.failNotEquals(Assert.java:489)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:160)
-	at com.xcellent.challenge.CIDIRTest.testCidr(CIDIRTest.java:25)
-</failure>
-    <system-out>@HL
-@HL-------------------------------------------------------
-@HL T E S T S
-@HL-------------------------------------------------------
-@SLRunning TestSuite
-</system-out>
-  </testcase>
+  <testcase time="0.014" classname="com.xcellent.challenge.CIDIRTest" name="testCidr"/>
 </testsuite>

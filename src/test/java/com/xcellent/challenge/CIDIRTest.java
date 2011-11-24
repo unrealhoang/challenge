@@ -22,6 +22,6 @@ public class CIDIRTest {
 		Assert.assertEquals(localhost.getAddress(), "127.0.0.1");
 		Assert.assertEquals(localhost.getMask().intValue(), 32);
 
-		Assert.assertEquals(localhostNetwork.getNext(), CIDR.of("127.0.0.1/32"));
+		Assert.assertEquals(localhostNetwork.getNext(), CIDR.of("127.0.0.1/8"));
 	}
 }

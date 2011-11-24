@@ -91,6 +91,10 @@ public class CIDR {
 		return (byte) ((source >> shifted) & 0xFF);
 	}
 	
+	/**
+	 * @param addr InetAddress to sum up
+	 * @return Convert byte array address to single int for calculation
+	 */
 	private static int getFullBytePresentation(InetAddress addr) {
 		int result = 0;
 		byte[] addrByte = addr.getAddress();
@@ -99,12 +103,17 @@ public class CIDR {
 		return result;
 	}
 	
+	/**
+	 * @param source int source to separate to byte array
+	 * @return byte array presentation of the byte address source
+	 */
 	private static byte[] getByteArrayPresentation(int source) {
 		byte[] result = new byte[4];
 		for (int i = 0; i < 4; i++) 
 			result[i] = getByte(i, source);
 		return result;
 	}
+	
 	/**
 	 * @return the mask address of this CIDR
 	 */
@@ -250,6 +259,21 @@ public class CIDR {
 		if (mask == 32)
 			return address.getHostAddress();
 		return address.getHostAddress() + "/" + mask;
+	}
+	
+	/**
+	 * Override equals for comparing CIDRs
+	 * @return true if and only if the object comparing is CIRD 
+	 * and have same address and mask
+	 */
+	@Override
+	public boolean equals(Object o) {
+		if (!(o instanceof CIDR))
+			return false;
+		CIDR t = (CIDR) o;
+		if (!t.address.equals(address) || !t.mask.equals(mask))
+			return false;
+		return true;
 	}
 
 }
